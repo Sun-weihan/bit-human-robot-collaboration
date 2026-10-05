@@ -13,23 +13,25 @@
 # 克隆仓库
 git clone https://github.com/Sun-weihan/bit-human-robot-collaboration.git
 cd bit-human-robot-collaboration
-
-# 运行自检脚本
-python main.py
 ```
 
-预期输出：打印当前 Python 与系统环境信息，并完成一次最小协同任务分配模拟。
+> 注意：入口脚本 `main.py` 已在提交 `2c7b505 delete test file` 中被移除，当前尚未恢复，
+> 因此克隆后暂时没有可直接运行的脚本。
 
 ## 目录结构
 
 ```
 .
-├── main.py          # 环境自检 + 最小协同任务示例
-├── README.md        # 项目说明
-└── .gitignore       # Git 忽略规则
+├── README.md                          # 项目说明
+├── .gitignore                         # Git 忽略规则
+├── .vscode/                           # 编辑器推荐配置
+│   ├── settings.json
+│   └── extensions.json
+├── 2027 AI_机器人顶会投稿时间轴.docx   # 学习资料：投稿时间轴
+└── git相关操作.md                      # 学习资料：Git 常用操作笔记
 ```
 
 ## 说明
 
-本仓库处于初始化阶段。`main.py` 用于验证仓库可正常克隆、运行，
-同时提供一个可扩展的协同任务分配逻辑骨架（`Collaborator` / `Task` / `assign`）。
+本仓库处于初始化阶段。此前 `main.py` 提供环境自检与最小协同任务分配逻辑骨架
+（`Collaborator` / `Task` / `assign`），恢复后可作为验证仓库可运行性的入口。
