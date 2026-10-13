@@ -1,0 +1,255 @@
+############ 天工 3.0 -> IsaacLab 验证日志 ############
+生成时间 : 2026-10-13T17:14:19+08:00
+服务器   : autodl-container-85874d8508-36b4a9d7  (172.17.0.9)
+GPU      : NVIDIA GeForce RTX 4090, 24564 MiB, 570.124.04
+IsaacLab : 2.3.2  @ /root/autodl-tmp/IsaacLab
+IsaacSim : 5.1.0-rc.19+release.26219.9c81211b.gl
+conda    : env_isaaclab -> Python 3.11.16
+
+############ 1. URDF -> USD 转换日志 ############
+[3gH    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H   [INFO] Using python from: /root/autodl-tmp/conda/envs/env_isaaclab/bin/python
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /root/autodl-tmp/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/root/autodl-tmp/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /root/autodl-tmp/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261013_171406.log
+2026-10-13T09:14:06Z [403ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-10-13T09:14:06Z [459ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T09:14:07Z [1,128ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-13T09:14:07Z [1,505ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.124.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | c19fda85.. |
+|     |                                  |        |     |            | 5a        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 5.15.0-97-generic
+| Processor: Intel(R) Xeon(R) Gold 6430
+| Bare Metal Cores: 64 | Bare Metal Logical Cores: 128
+| Core Usage Quota: 16
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 122880 | Free Memory: 118947
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-10-13T09:14:11Z [5,430ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-10-13T09:14:11Z [5,477ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[1/4] 转换 URDF -> USD
+      输入: /root/autodl-tmp/tiangong3/urdf/tiangong3_isaaclab.urdf
+2026-10-13T09:14:11Z [5,711ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:11Z [5,711ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.124.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | c19fda85.. |
+|     |                                  |        |     |            | 5a        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 5.15.0-97-generic
+| Processor: Intel(R) Xeon(R) Gold 6430
+| Bare Metal Cores: 64 | Bare Metal Logical Cores: 128
+| Core Usage Quota: 16
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 122880 | Free Memory: 118820
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-10-13T09:14:12Z [6,119ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-10-13T09:14:12Z [6,788ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:12Z [6,788ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [6,998ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:13Z [6,998ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [7,012ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:13Z [7,012ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [7,021ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:13Z [7,021ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [7,025ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:13Z [7,025ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [7,027ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-10-13T09:14:13Z [7,027ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-10-13T09:14:13Z [7,592ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-10-13T09:14:14Z [8,062ms] [Warning] [isaacsim.asset.importer.urdf] imu_waist_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,131ms] [Warning] [isaacsim.asset.importer.urdf] camera_body_front_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,180ms] [Warning] [isaacsim.asset.importer.urdf] camera_head_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,191ms] [Warning] [isaacsim.asset.importer.urdf] imu_head_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,206ms] [Warning] [isaacsim.asset.importer.urdf] radar_head_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,323ms] [Warning] [isaacsim.asset.importer.urdf] left_tcp_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+2026-10-13T09:14:14Z [8,437ms] [Warning] [isaacsim.asset.importer.urdf] right_tcp_joint: Joint Axis is not body aligned with X, Y or Z primary axis. Adjusting PhysX joint alignment to Axis X and reorienting bodies.
+      输出: /root/autodl-tmp/tiangong3/usd/tiangong3_isaaclab.usd
+
+--convert-only 指定，退出。USD: /root/autodl-tmp/tiangong3/usd/tiangong3_isaaclab.usd
+
+############ 2. 加载 + 资产核对 + 沉降测试日志 ############
+==============================================================
+ 天工 3.0 -> IsaacLab  [test]
+==============================================================
+  包目录  : /root/autodl-tmp/tiangong3
+  模式    : test
+
+conda    : env_isaaclab  ->  /root/autodl-tmp/conda/envs/env_isaaclab/bin/python
+python   : Python 3.11.16
+isaaclab : /root/autodl-tmp/IsaacLab  (VERSION=2.3.2)
+isaacsim : 5.1.0-rc.19+release.26219.9c81211b.gl
+
+---------- 载入 + 站立测试 ----------
+[3gH    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H   [INFO] Using python from: /root/autodl-tmp/conda/envs/env_isaaclab/bin/python
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /root/autodl-tmp/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/root/autodl-tmp/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /root/autodl-tmp/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261013_170105.log
+2026-10-13T09:01:05Z [352ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-10-13T09:01:05Z [419ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-10-13T09:01:06Z [1,060ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-10-13T09:01:06Z [1,371ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.124.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24810   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | c19fda85.. |
+|     |                                  |        |     |            | 5a        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 5.15.0-97-generic
+| Processor: Intel(R) Xeon(R) Gold 6430
+| Bare Metal Cores: 64 | Bare Metal Logical Cores: 128
+| Core Usage Quota: 16
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 122880 | Free Memory: 120100
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-10-13T09:01:10Z [5,409ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+[1/4] USD 已存在，跳过转换: /root/autodl-tmp/tiangong3/usd/tiangong3_isaaclab.usd
+[2/4] 构建场景
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-10-13_17-01-11.log[0m
+[36m======================================================================================[0m
+
+[33m17:01:11 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+
+[3/4] 资产完整性核对
+      根 link（URDF 里的 base_link）: pelvis
+      刚体数 bodies :  39  (URDF 期望 39)  OK
+      关节数 joints :  31  (URDF 期望 31)  OK
+      总质量        :   65.82 kg  (URDF 期望 65.82)  OK
+
+      刚体列表:
+        [ 0] pelvis
+        [ 1] hip_pitch_l_link
+        [ 2] hip_pitch_r_link
+        [ 3] imu_waist_link
+        [ 4] waist_yaw_link
+        [ 5] hip_roll_l_link
+        [ 6] hip_roll_r_link
+        [ 7] waist_roll_link
+        [ 8] hip_yaw_l_link
+        [ 9] hip_yaw_r_link
+        [10] waist_pitch_link
+        [11] knee_pitch_l_link
+        [12] knee_pitch_r_link
+        [13] camera_body_front_link
+        [14] head_yaw_link
+        [15] imu_head_link
+        [16] radar_head_link
+        [17] shoulder_pitch_l_link
+        [18] shoulder_pitch_r_link
+        [19] ankle_pitch_l_link
+        [20] ankle_pitch_r_link
+        [21] head_pitch_link
+        [22] shoulder_roll_l_link
+        [23] shoulder_roll_r_link
+        [24] ankle_roll_l_link
+        [25] ankle_roll_r_link
+        [26] camera_head_link
+        [27] shoulder_yaw_l_link
+        [28] shoulder_yaw_r_link
+        [29] elbow_pitch_l_link
+        [30] elbow_pitch_r_link
+        [31] elbow_yaw_l_link
+        [32] elbow_yaw_r_link
+        [33] wrist_pitch_l_link
+        [34] wrist_pitch_r_link
+        [35] wrist_roll_l_link
+        [36] wrist_roll_r_link
+        [37] left_tcp_link
+        [38] right_tcp_link
+
+      关节列表（含限位）:
+        [ 0] hip_pitch_l_joint            [-3.054, +2.793] rad
+        [ 1] hip_pitch_r_joint            [-3.054, +2.793] rad
+        [ 2] waist_yaw_joint              [-2.618, +3.229] rad
+        [ 3] hip_roll_l_joint             [-0.419, +2.618] rad
+        [ 4] hip_roll_r_joint             [-2.618, +0.419] rad
+        [ 5] waist_roll_joint             [-0.436, +0.436] rad
+        [ 6] hip_yaw_l_joint              [-1.396, +4.451] rad
+        [ 7] hip_yaw_r_joint              [-4.451, +1.396] rad
+        [ 8] waist_pitch_joint            [-0.524, +0.873] rad
+        [ 9] knee_pitch_l_joint           [-0.087, +2.531] rad
+        [10] knee_pitch_r_joint           [-0.087, +2.531] rad
+        [11] head_yaw_joint               [-1.047, +1.047] rad
+        [12] shoulder_pitch_l_joint       [-2.845, +2.845] rad
+        [13] shoulder_pitch_r_joint       [-2.845, +2.845] rad
+        [14] ankle_pitch_l_joint          [-1.187, +0.524] rad
+        [15] ankle_pitch_r_joint          [-1.187, +0.524] rad
+        [16] head_pitch_joint             [-0.873, +0.262] rad
+        [17] shoulder_roll_l_joint        [-0.192, +3.334] rad
+        [18] shoulder_roll_r_joint        [-3.334, +0.192] rad
+        [19] ankle_roll_l_joint           [-0.524, +0.524] rad
+        [20] ankle_roll_r_joint           [-0.524, +0.524] rad
+        [21] shoulder_yaw_l_joint         [-2.845, +2.845] rad
+        [22] shoulder_yaw_r_joint         [-2.845, +2.845] rad
+        [23] elbow_pitch_l_joint          [-2.548, +0.192] rad
+        [24] elbow_pitch_r_joint          [-2.548, +0.192] rad
+        [25] elbow_yaw_l_joint            [-2.845, +2.845] rad
+        [26] elbow_yaw_r_joint            [-2.845, +2.845] rad
+        [27] wrist_pitch_l_joint          [-1.326, +1.326] rad
+        [28] wrist_pitch_r_joint          [-1.326, +1.326] rad
+        [29] wrist_roll_l_joint           [-1.326, +1.326] rad
+        [30] wrist_roll_r_joint           [-1.326, +1.326] rad
+
+[4/4] 重力沉降测试（500 步 @ dt=0.005s）
+      说明：浮动基座人形机器人在固定 PD 增益下本来就会下蹲/失稳，
+            这一步只用来确认仿真能稳定跑下去，不作为 URDF 对错的判据。
+      step    0: 根高度  0.999 m | 关节最大偏离 0.0060 rad
+      step  100: 根高度  0.996 m | 关节最大偏离 0.0117 rad
+      step  200: 根高度  0.975 m | 关节最大偏离 0.1360 rad
+      step  300: 根高度  0.797 m | 关节最大偏离 0.3548 rad
+      step  400: 根高度  0.108 m | 关节最大偏离 0.1051 rad
+
+      起始根高度 : 0.999 m
+      结束根高度 : 0.108 m
+      最低根高度 : 0.108 m
+      仿真是否跑完 : 是（500 步无异常退出）
+
+==============================================================
+ 结论：URDF -> USD 导入正确（39 刚体 / 31 关节 / 65.82 kg 全部对上）
+==============================================================
+
+下一步：真实训练请用 manager-based 环境注册任务，
+        或接入 Open-X-Humanoid/TienKung-Lab 的走跑任务。
+
+############ 3. 生成的 USD 产物 ############
+        32  /root/autodl-tmp/tiangong3/usd/.asset_hash
+   4888724  /root/autodl-tmp/tiangong3/usd/configuration/tiangong3_isaaclab_base.usd
+     13076  /root/autodl-tmp/tiangong3/usd/configuration/tiangong3_isaaclab_physics.usd
+      3013  /root/autodl-tmp/tiangong3/usd/configuration/tiangong3_isaaclab_robot.usd
+       659  /root/autodl-tmp/tiangong3/usd/configuration/tiangong3_isaaclab_sensor.usd
+       608  /root/autodl-tmp/tiangong3/usd/config.yaml
+      1476  /root/autodl-tmp/tiangong3/usd/tiangong3_isaaclab.usd
+
+############ 4. 资源包校验 ############
+URDF 文件数: 2
+凸包网格数: 39
+包体积    : 8.7M
